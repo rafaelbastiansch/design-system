@@ -4,9 +4,7 @@
       "commitMessage": "chore(release): %s"
     },
     "github": {
-      "release": true,
-      "releaseName": "v%s",
-      "tokenRef": "GITHUB_TOKEN"
+      "release": true
     },
     "npm": {
       "publish": true
