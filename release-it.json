@@ -4,10 +4,11 @@
       "commitMessage": "chore(release): %s"
     },
     "github": {
-      "release": true
+      "release": true,
+      "releaseName": "v%s"
     },
     "npm": {
-      "ignoreVersion": true
+      "publish": true
     },
     "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
 }
