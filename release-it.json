@@ -7,7 +7,7 @@
       "release": true
     },
     "npm": {
-      "publish": true
+      "ignoreVersion": true
     },
     "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
 }
