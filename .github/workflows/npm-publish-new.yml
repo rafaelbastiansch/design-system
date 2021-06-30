@@ -20,4 +20,4 @@ jobs:
     - name: Build
       run: yarn build
     - name: Publish library
-      run: npm run npm-publish -- -b "homol" -m "[beta]" --publish-branches "homol"
+      run: npm run release -- patch --ci
