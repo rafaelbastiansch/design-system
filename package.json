@@ -18,7 +18,8 @@
     "docs": "start-storybook -p 6006",
     "build-docs": "build-storybook",
     "chromatic": "npx chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes",
-    "release": "release-it"
+    "release": "release-it",
+    "npm-publish": "npm-publish"
   },
   "main": "./dist/design.common.js",
   "types": "./types",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@getyourguide/npm-publish": "^1.0.9",
     "@mdi/font": "^5.8.55",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
