@@ -2,7 +2,7 @@ name: npm-publish-beta
 on:
   push:
     branches:
-      - homol-build
+      - homol
 jobs:
   publish:
     name: Build & Publish
