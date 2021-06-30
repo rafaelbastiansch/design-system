@@ -12,6 +12,9 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         registry-url: 'https://registry.npmjs.org'
+    - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      with:
+        token: '${{ secrets.GITHUB_TOKEN }}'
     - name: Cache node_modules
       id: cache-modules
       uses: actions/cache@v1
