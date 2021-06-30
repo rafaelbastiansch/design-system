@@ -1,6 +1,6 @@
 {
   "name": "poc-design",
-  "version": "1.1.18-prepatch.0",
+  "version": "1.1.18-1",
   "license": "MIT",
   "author": {
     "name": "Rafael Bastiansch",
@@ -18,7 +18,7 @@
     "docs": "start-storybook -p 6006",
     "build-docs": "build-storybook",
     "chromatic": "npx chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes",
-    "release": "release-it --preRelease prepatch",
+    "release": "release-it prepatch --preRelease",
     "npm-publish": "npm-publish"
   },
   "main": "./dist/design.common.js",
