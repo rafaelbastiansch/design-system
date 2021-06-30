@@ -19,6 +19,7 @@
     "build-docs": "build-storybook",
     "chromatic": "npx chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes",
     "release": "release-it --preRelease",
+    "release2": "release-it",
     "npm-publish": "npm-publish"
   },
   "main": "./dist/design.common.js",
