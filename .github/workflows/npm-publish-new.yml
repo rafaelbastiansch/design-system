@@ -20,4 +20,4 @@ jobs:
     - name: Build
       run: yarn build
     - name: Publish library
-      run: npm run npm-publish -- -b "${{ github.ref }}" -m "${{ github.event.head_commit.message }}" --publish-branches "homol"
+      run: npm run npm-publish -- -b "homol" -m "[beta]" --publish-branches "homol"
