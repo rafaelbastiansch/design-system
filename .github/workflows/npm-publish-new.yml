@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        registry-url: 'https://registry.npmjs.org'
     - name: Cache node_modules
       id: cache-modules
       uses: actions/cache@v1
@@ -21,3 +24,5 @@ jobs:
       run: yarn build
     - name: Publish library
       run: npm run release -- patch --ci
+      env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
