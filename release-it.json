@@ -1,12 +1,11 @@
 {
     "src": {
-      "tagName": "v%s",
+      "tagName": "v${version}",
       "commitMessage": "chore(release): %s"
     },
     "github": {
       "release": true,
-      "releaseName": "v%s",
-      "tokenRef": "GITHUB_TOKEN"
+      "releaseName": "v${version}"
     },
     "npm": {
       "publish": true
